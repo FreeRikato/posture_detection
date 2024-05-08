@@ -6,9 +6,7 @@ import cv2
 import numpy as np
 import pandas as pd
 
-from flask_sslify import SSLify
 app = Flask(__name__)
-sslify = SSLify(app)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posture.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
